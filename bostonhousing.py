@@ -37,8 +37,14 @@ def main():
     Este conjunto de datos es ampliamente utilizado en estudios sobre la valorización inmobiliaria y el desarrollo de modelos de regresión.
     """)
     st.title("Predicción del precio de casas en Boston")
-    st.write("El modelo final utiliza el método de clasificación basado en el voto de k-vecinos más cercanos con los hiperparámetros **n_neighbors: 4, p: 3**.")
-    st.write("---")
+    st.subheader("Modelo utilizado para la predicción")
+    st.write("""
+    El modelo final empleado para la predicción del precio de las casas en Boston se basa en el algoritmo de **k-vecinos más cercanos (k-NN)**. Este método de aprendizaje supervisado clasifica o predice valores en función de la proximidad a los datos de entrenamiento más similares. 
+    
+    En este caso, el modelo ha sido optimizado con los siguientes hiperparámetros:
+    - **n_neighbors = 4**: Se consideran los cuatro vecinos más cercanos para realizar la estimación.
+    - **p = 3**: La distancia entre puntos se calcula utilizando la métrica de la norma de orden 3 (distancia de Minkowski con p=3).""")
+    
     st.subheader("Ingrese las características de la casa para obtener la predicción")
     
     # Entrada de datos por el usuario
