@@ -12,6 +12,30 @@ def load_model():
 
 # Interfaz en Streamlit
 def main():
+    st.title("Housing Boston")
+    st.write("""
+    ### Conoce un poco sobre la base de datos.
+    La base de datos **Boston Housing** proviene de información recopilada por el Servicio del Censo de EE.UU. sobre viviendas en la zona de Boston, MA. 
+    Contiene información detallada sobre diferentes características de los vecindarios que pueden influir en el valor de las viviendas.
+    
+    #### Descripción de las variables del conjunto de datos:
+    - **CRIM**: Tasa de criminalidad per cápita por ciudad.
+    - **ZN**: Proporción de terrenos residenciales para lotes de más de 25,000 pies cuadrados.
+    - **INDUS**: Proporción de acres comerciales no minoristas por ciudad.
+    - **CHAS**: Variable ficticia del río Charles (1 si la zona limita con el río; 0 en caso contrario).
+    - **NOX**: Concentración de óxidos de nitrógeno (partes por 10 millones).
+    - **RM**: Número promedio de habitaciones por vivienda.
+    - **AGE**: Proporción de unidades ocupadas por propietarios construidas antes de 1940.
+    - **DIS**: Distancia ponderada a cinco centros de empleo de Boston.
+    - **RAD**: Índice de accesibilidad a carreteras radiales.
+    - **TAX**: Tasa del impuesto a la propiedad por cada $10,000.
+    - **PTRATIO**: Ratio de alumnos por profesor por ciudad.
+    - **B**: 1000(Bk - 0.63)^2 donde Bk es la proporción de residentes afroamericanos por ciudad.
+    - **LSTAT**: Porcentaje de población con bajo nivel socioeconómico.
+    - **MEDV**: Valor medio de las viviendas ocupadas por sus propietarios en miles de dólares.
+    
+    Este conjunto de datos es ampliamente utilizado en estudios sobre la valorización inmobiliaria y el desarrollo de modelos de regresión.
+    """)
     st.title("Predicción del precio de casas en Boston")
     st.write("El modelo final utiliza el método de clasificación basado en el voto de k-vecinos más cercanos con los hiperparámetros **n_neighbors: 4, p: 3**.")
     st.write("---")
