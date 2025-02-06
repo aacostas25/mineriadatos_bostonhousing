@@ -59,7 +59,7 @@ def main():
     empleo = st.number_input("Distancia a centros de empleo", min_value=0.0, format="%.2f")
     calles = st.number_input("Índice de accesibilidad a carreteras", min_value=1, max_value=24)
     impuestos = st.number_input("Tasa de impuestos a la propiedad", min_value=0, format="%d")
-    ptratio = st.number_input("Ratio de alumnos por profesor", min_value=0.0, format="%.1f")
+    ptratio = st.number_input("Ratio de alumnos por profesor", min_value=0.0, format="%.01f")
     afroa = st.number_input("Proporción de residentes afroamericanos", min_value=0.0, format="%.2f")
     estrato = st.number_input("Porcentaje de población con bajo nivel socioeconómico", min_value=0.0, format="%.2f")
     
