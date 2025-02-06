@@ -16,8 +16,9 @@ def main():
     st.write("""
     ### Conoce un poco sobre la base de datos.
     La base de datos **Boston Housing** proviene de información recopilada por el Servicio del Censo de EE.UU. sobre viviendas en la zona de Boston, MA. 
-    Contiene información detallada sobre diferentes características de los vecindarios que pueden influir en el valor de las viviendas.
-    
+    Contiene información detallada sobre diferentes características de los vecindarios que pueden influir en el valor de las viviendas.""")
+    st.image('housingboston.jpg', caption="Boston")
+    st.write("""
     #### Descripción de las variables del conjunto de datos:
     - **CRIM**: Tasa de criminalidad per cápita por ciudad.
     - **ZN**: Proporción de terrenos residenciales para lotes de más de 25,000 pies cuadrados.
