@@ -39,7 +39,7 @@ def main():
     """)
     st.title("Predicción del precio de casas en Boston")
     st.subheader("Modelo utilizado para la predicción")
- 
+
     
     st.subheader("Ingrese las características de la casa para obtener la predicción")
     
