@@ -39,7 +39,22 @@ def main():
     """)
     st.title("Predicción del precio de casas en Boston")
     st.subheader("Modelo utilizado para la predicción")
-
+    st.write("""
+    ### Evaluación de Modelos y Técnicas de Preprocesamiento
+    
+    Para la clasificación de Boston Housing, se probaron varias configuraciones de modelos y técnicas de preprocesamiento:
+    
+    - **ElasticNet**: Se evaluaron diferentes valores de `alpha` ([0.1, 0.2, 0.5, 1.0, 10.0, 100.0]) y `l1_ratio` ([0.1, 0.2, 0.5, 1.0]).
+      
+    - **Kernel Ridge Regression (KRR)**: Se probaron diferentes valores de `alpha` y se evaluaron varios tipos de núcleos: **linear**, **poly**, **rbf**, y **sigmoid**.
+    
+    Además, se compararon diferentes métodos de escalado:
+    - **StandardScaler**
+    - **MinMaxScaler**
+    - **Sin escalado** (None)
+    
+    Estas combinaciones fueron probadas para determinar cuál proporciona el mejor rendimiento en la predicción.
+    """)
     
     st.subheader("Ingrese las características de la casa para obtener la predicción")
     
